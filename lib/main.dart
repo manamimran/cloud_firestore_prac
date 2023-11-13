@@ -1,5 +1,6 @@
 
 import 'package:cloud_firestore_prac/screens/show_data.dart';
+import 'package:cloud_firestore_prac/screens/signUp_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:ShowData(),
+      home:SignUp(),
     );
   }
 }
