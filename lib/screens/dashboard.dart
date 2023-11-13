@@ -11,9 +11,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  // List<DashboardModel> userList = []; //initializing the list of data in model class
-  // AuthServices authServices = AuthServices();
-  // late DashboardModel model;   // Variable to store the retrieved data
+
   final auth = FirebaseAuth.instance;
   DashboardModel? dashboardModel;
 
@@ -24,17 +22,13 @@ class _DashboardState extends State<Dashboard> {
   }
 
   Future<void> getData() async {
-    var uid = FirebaseAuth.instance.currentUser!
-        .uid; //The currentUser property represents the currently signed-in user, and uid is the unique identifier for that user.
+    var uid = FirebaseAuth.instance.currentUser!.uid; //The currentUser property represents the currently signed-in user, and uid is the unique identifier for that user.
     //print(value.user?.uid);
 
     final doc = FirebaseFirestore.instance.collection("users").doc(uid);
     final snapshot = await doc.get();
     if (snapshot.exists) {
       setState(() {
-        // Flutter should rebuild the widget with the updated data.
-        // var value;
-        // print(value.user?.uid);
 
         print("userdata exist");
         dashboardModel = DashboardModel.fromMap(snapshot.data() as Map<String,

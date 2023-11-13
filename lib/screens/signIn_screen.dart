@@ -63,35 +63,7 @@ class SignIn extends StatelessWidget {
                       ),
                     );
                   }
-                  // if (authServices.emailController != null &&
-                  //     authServices.passwordController != null) {
-                  //   authServices.signIn(context);
-                  // }
-                  // final UserCredential userCredential = await FirebaseAuth.instance
-                  //     .signInWithEmailAndPassword(
-                  //     email: emailController.text,
-                  //     password: passwordController.text);
-                  // final User? user = userCredential.user; // Access the User object from UserCredential.
-                  //
-                  // if (user != null) {
-                  //   // User registration was successful
-                  //   // You can fetch additional user information if needed and then navigate to the Dashboard.
-                  //   Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //       builder: (context) => Dashboard(user: user), // Pass the user object to Dashboard.
-                  //     ),
-                  //   );
-                  // } else {
-                  //   // Handle registration or login errors.
-                  // }
-                  // // final doc = FirebaseFirestore.instance.collection("users").doc(userModel.email);
-                  // //
-                  // //   print('Logged in successfully');
-                  // //   Navigator.push(
-                  // //     context,
-                  // //     MaterialPageRoute(builder: (context) => ShowData()),
-                  // //   );
+
                 },
                 child: Text('Sign In'),
               ),

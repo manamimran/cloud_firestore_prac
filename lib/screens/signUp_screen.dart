@@ -161,32 +161,6 @@ class _SignUpState extends State<SignUp> {
                                 ),
                               );
                             }
-                            // if (authServices.emailController != null &&
-                            //     authServices.passwordController != null) {
-                            //   authServices.signUp(context);
-                            //   print('auth done');
-                            // }
-
-                            // var uid = FirebaseAuth.instance.currentUser!.uid;   ////The currentUser property represents the currently signed-in user, and uid is the unique identifier for that user.
-                            //
-                            // if (images != null) {
-                            //   final url = await uploadImage(images!, uid);
-                            //   // print(url);
-                            //
-                            //   //passing values to Model
-                            //   final dashboardModel = DashboardModel(
-                            //       id: uid,
-                            //       email: authServices.emailController.text,
-                            //       image: url,
-                            //       password: authServices.passwordController.text);
-                            //
-                            //   final doc = FirebaseFirestore.instance
-                            //       .collection("users")
-                            //       .doc(uid);
-                            //   // Save the Model to Firestore
-                            //   await doc.set(dashboardModel.toMap());
-                            //   print('data added');
-                            // }
 
                           },
                           child: Center(
